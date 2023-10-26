@@ -1,0 +1,114 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-logo {
+  height: 58px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+}
+
+.header-logo-small {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.button {
+    font-weight: 600;
+    font-style: normal;
+    text-transform: none;
+    color: #E21C21;
+    font-family:  'Oswald', sans-serif;
+    line-height: unset;
+    text-shadow: 1px 0 #ffffff00, -1px 0 #ffffff00, 0 1px #ffffff00, 0 -1px #ffffff00, 3px 3px 2px rgba(0, 0, 0, 0.15), 3px 3px 2px rgba(0, 0, 0, 0.21);
+    font-size: 21px;
+}
+
+/**/
+
+.topnav {
+  width: 100%;
+  vertical-align: middle;
+  display: inline;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+  font-weight: 600;
+    font-style: normal;
+    text-transform: none;
+    color: #E21C21;
+    font-family:  'Oswald', sans-serif;
+    line-height: unset;
+    text-shadow: 1px 0 #ffffff00, -1px 0 #ffffff00, 0 1px #ffffff00, 0 -1px #ffffff00, 3px 3px 2px rgba(0, 0, 0, 0.15), 3px 3px 2px rgba(0, 0, 0, 0.21);
+    font-size: 21px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  width: 58px;
+  height: 58px;
+}
+
+@media (min-width: 777px) {
+  
+.topnav .icon {
+  width: 60px;
+  height: 60px;
+  visibility:collapse;
+}
+}
+
+@media screen and (max-width: 777px) {
+  .topnav a {
+    display: none;
+    justify-content: center;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: center;
+  }
+}
+

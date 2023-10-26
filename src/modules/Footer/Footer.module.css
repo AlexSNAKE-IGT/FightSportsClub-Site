@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  background: #000000;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footerLogo {
+    margin: 25px 0 25px 10%;
+    height: 80px;
+}
+
+.footerText {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.footerSocNetIcon {
+    height: 50px;
+    width: 50px;
+    margin: 25px;
+}
+
+.footerGroup {
+    align-items: center;
+    margin: auto;
+}
+
+.footerIcon {
+    filter: invert(14%) sepia(89%) saturate(4949%) hue-rotate(351deg) brightness(92%) contrast(91%);
+    width: 20px;
+    height: 20px;
+}
