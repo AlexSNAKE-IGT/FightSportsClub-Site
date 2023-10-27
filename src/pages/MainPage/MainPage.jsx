@@ -2,7 +2,7 @@ import styles from './SinglePage.module.css';
 import { Parallax } from 'react-parallax';
 import MainCarousel from '../../modules/MainCarousel/MainCarousel.jsx';
 import ContactForm from '../../modules/ContactForm/ContactForm';
-import MainPageImage from '../../assets/images/MainPagePhoto.jpg';
+import MainPageImage from '../../assets/images/MainPagePhoto.webp';
 import locales from '../../assets/localization/localization.js';
 import { useLocale } from '../../assets/localization/localeContext.js';
 

@@ -7,12 +7,12 @@ class MainCarousel extends Component {
         return (
             <Carousel width={'80vw'} >
                 <div>
-                    <img src="http://sportizdorovie.ru/wp-content/uploads/2013/04/Бой.jpg"  alt={""}/>
+                    <img src="https://sun9-21.userapi.com/impg/E_js-UuvlJD4sqtpQVvCi9jjwbVbJZ4oiDxWjQ/aiZLwnWfwuM.jpg?size=2560x1920&quality=95&sign=0a5a9b499436022c71035f24c1d1b890&type=album"  alt={""}/>
                     <p className={"legend"}>Тренировки на высшем уровне!</p>
                 </div>
                 <div>
-                    <img src="https://fikiwiki.com/uploads/posts/2022-02/1645054302_50-fikiwiki-com-p-kartinki-mma-56.jpg"  alt={""}/>
-                    <p className={"legend"}>Тренировки на высшем уровне!</p> 
+                    <img src="https://sun9-7.userapi.com/impg/sK5lbe9ZxYmxGAPxImCzK1Vafecno7bE06tugQ/I9H9yDb5LYM.jpg?size=2560x1920&quality=95&sign=b6d3b6aeb0bbab258565adcae53c342a&type=album"  alt={""}/>
+                    <p className={"legend"}>Твой путь к миру MMA!</p> 
                 </div>
             </Carousel>
         );

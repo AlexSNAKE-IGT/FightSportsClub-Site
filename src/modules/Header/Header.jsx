@@ -14,8 +14,8 @@ function Header() {
   
   return (
     <div className="header">
-      <Link to="/" onClick={() => scrollToElement('topNav')}>
-        <img alt='' className="header-logo" src={LogoWhite} />
+      <Link onClick={() => scrollToElement('topNav')} to={""}>
+        <img alt='FSC Logo' className="header-logo" src={LogoWhite} />
       </Link>
       <BurgerMenuWrapper>
         <Link to="/about" onClick={() => scrollToElement('aboutNav')} className="button">
