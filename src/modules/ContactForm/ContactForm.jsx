@@ -12,9 +12,9 @@ const ContactForm = () => {
     reset
   } = useForm();
 
-  const serviceID = process.env.REACT_APP_SERVICE_ID;
-  const templateId = process.env.REACT_APP_TEMPLATE_ID;
-  const key = process.env.REACT_APP_KEY;
+  const REACT_APP_SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const REACT_APP_TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const REACT_APP_PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
   const onSubmit = async (data) => {
     const { name, email, contactPhone, message } = data;
@@ -27,14 +27,17 @@ const ContactForm = () => {
       };
 
       await emailjs.send(
-        serviceID,
-        templateId,
+        REACT_APP_SERVICE_ID,
+        REACT_APP_TEMPLATE_ID,
         templateParams,
-        key
+        REACT_APP_PUBLIC_KEY
         );
 
       reset();
     } catch (error) {
+      console.log('serviceID:', REACT_APP_SERVICE_ID);
+      console.log('templateId:', REACT_APP_TEMPLATE_ID);
+      console.log('key:', REACT_APP_PUBLIC_KEY);
       console.error(error);
     }
   };

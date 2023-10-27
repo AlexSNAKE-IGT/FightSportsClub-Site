@@ -1,12 +1,13 @@
 {
   "name": "fight-sports-club",
-  "version": "1.0,1",
+  "version": "1.0,2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "emailjs-com": "^3.2.0",
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.46.2",
@@ -18,8 +19,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "env-cmd -f ./src/.env.staging react-scripts start",
+    "build:staging": "env-cmd -f ./src/.env.staging react-scripts build",
+    "build:production": "env-cmd -f ./src/.env.production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
